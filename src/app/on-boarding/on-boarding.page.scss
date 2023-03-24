@@ -1,0 +1,51 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    height: 100%;
+    padding-top: 60px;
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        .img {
+            width: 90%;
+            height: 90%;
+        }
+    }
+
+    .boarding-container {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .app-name {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+            color: #101828;
+        }
+
+        .note {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #667085;
+        }
+    }
+
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+ion-button{
+    text-transform: none;
+}
