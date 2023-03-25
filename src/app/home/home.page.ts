@@ -17,7 +17,7 @@ export class HomePage {
     setTimeout(() => {
       console.log('init');
       this.navCtrl.navigateForward('on-boarding')
-    }, 3000);
+    }, 1500);
   }
 
 }

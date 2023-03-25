@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -15,6 +19,12 @@ const routes: Routes = [
     path: 'on-boarding',
     loadChildren: () => import('./on-boarding/on-boarding.module').then( m => m.OnBoardingPageModule)
   },
+  {
+    path: 'pick-up',
+    loadChildren: () => import('./pick-up/pick-up.module').then( m => m.PickUpPageModule)
+  },
+
+
 ];
 
 @NgModule({

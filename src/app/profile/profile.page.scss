@@ -1,0 +1,81 @@
+.page {
+  font-family: "Poppins";
+  font-style: normal;
+  .header {
+    background-image: url("../../assets/images/header-profile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      color: #ffffff;
+      margin-top: 50px;
+    }
+  }
+
+  .profile {
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0px 2px 4px rgba(9, 16, 29, 0.12);
+    border-radius: 16px;
+    margin: 0 16px;
+    margin-top: -20%;
+
+    .profile-detail {
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #101828;
+      }
+
+      .phone {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #344054;
+      }
+
+      .email {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #344054;
+      }
+    }
+
+    .edit-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .edit {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #e52138;
+      }
+    }
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+}
+
+ion-item {
+  margin-bottom: 8px;
+}

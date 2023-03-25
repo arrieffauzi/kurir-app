@@ -1,0 +1,50 @@
+<ion-row>
+  <ion-col class="ion-no-padding status-container">
+    <ion-row *ngIf="isIconSection">
+      <ion-col class="ion-no-padding header-container">
+        <div class="icon-section">
+          <img src="../../assets/icon/progress-icon.svg" alt="">
+          <div class="resi-number">
+            <span class="number">#1234566788</span>
+            <span class="date">10 Sep 2021</span>
+          </div>
+        </div>
+        <div>
+          <div [ngClass]="status">
+            <span>{{status}}</span>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="line"></ion-row>
+    <ion-row>
+      <ion-col class="ion-no-padding detail-container">
+        <div class="flex-column">
+          <span class="title">Berat</span>
+          <span class="value">32 Kg</span>
+        </div>
+        <div class="flex-column">
+          <span class="title">Total Paket</span>
+          <span class="value">50</span>
+        </div>
+        <div class="flex-column">
+          <span class="title">Estimasi</span>
+          <span class="value">10 Sep 2021, 20:20 WIB</span>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-no-padding address-container">
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <img src="../../assets/icon/location.svg" alt="">
+          </ion-col>
+          <ion-col class="ion-no-padding location">
+            <span>Kost</span>
+            <p> Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta.... </p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+</ion-row>

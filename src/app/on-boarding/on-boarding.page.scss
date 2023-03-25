@@ -1,51 +1,64 @@
 .page {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  height: 100%;
+  padding-top: 60px;
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    .img {
+      width: 100%;
+      height: 90%;
+      margin-right: 40px;
+    }
+  }
+
+  .boarding-container {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    height: 100%;
-    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-    .img-container {
-        display: flex;
-        justify-content: center;
-        .img {
-            width: 90%;
-            height: 90%;
-        }
+    .app-name {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      color: #101828;
     }
 
-    .boarding-container {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        .app-name {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 27px;
-            color: #101828;
-        }
-
-        .note {
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 18px;
-            color: #667085;
-        }
+    .note {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #667085;
     }
+  }
 
-    .btn-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-top: 50px;
+  }
 }
 
-ion-button{
-    text-transform: none;
+ion-button {
+  text-transform: none;
+  --background:#E52138;
+  --border-radius: 16px;
+  width: 253px;
+  height: 48px
 }
