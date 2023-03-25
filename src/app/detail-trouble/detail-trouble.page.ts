@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-detail-trouble',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-trouble.page.scss'],
 })
 export class DetailTroublePage implements OnInit {
-  data: any = ['', '', '', '', '',]
-  constructor() { }
+  data = new Array(10);
+  constructor(
+    private navCtrl:NavController
+  ) { }
 
   ngOnInit() {
+  }
+
+  goToDetail(){
+    this.navCtrl.navigateForward('pickup-detail',{queryParams: {data: 'Trouble'}})
   }
 
 }

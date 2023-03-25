@@ -3,5 +3,7 @@
   <ion-icon (click)="goToBack()" class="back" name="arrow-back-outline"></ion-icon>
   </div>
   <div class="title">{{title}}</div>
-  <div></div>
+  <div>
+    <img src="../../../assets/icon/icon-scanner.svg" alt="" *ngIf="isScanner">
+  </div>
 </div>

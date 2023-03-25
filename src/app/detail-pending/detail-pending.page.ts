@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-detail-pending',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-pending.page.scss'],
 })
 export class DetailPendingPage implements OnInit {
-  data:any = ['','','','','',]
-  constructor() { }
+  data = new Array(10);
+  constructor(
+    private navCtrl: NavController
+  ) { }
 
   ngOnInit() {
+  }
+
+  goToDetail(){
+    this.navCtrl.navigateForward('pickup-detail',{queryParams: {data: 'Pending'}})
   }
 
 }

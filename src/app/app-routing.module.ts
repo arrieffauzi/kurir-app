@@ -23,6 +23,11 @@ const routes: Routes = [
     path: 'pick-up',
     loadChildren: () => import('./pick-up/pick-up.module').then( m => m.PickUpPageModule)
   },
+  {
+    path: 'pickup-detail',
+    loadChildren: () => import('./pickup-detail/pickup-detail.module').then( m => m.PickupDetailPageModule)
+  },
+
 
 
 ];

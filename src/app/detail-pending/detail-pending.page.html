@@ -1,5 +1,5 @@
 <ion-content>
   <div class="page">
-    <order-detail [isIconSection]="true" status="Pending" *ngFor="let item of data"></order-detail>
+    <order-detail [isIconSection]="true" status="Pending" *ngFor="let item of data" (click)="goToDetail()"></order-detail>
   </div>
 </ion-content>

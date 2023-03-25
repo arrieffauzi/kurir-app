@@ -9,6 +9,7 @@ import { NavController } from '@ionic/angular';
 export class PageHeaderComponent  implements OnInit {
   @Input() title: string = '';
   @Input() backPage: string = '';
+  @Input() isScanner: boolean = false;
   constructor(
     private navCtrl:NavController
   ) { }

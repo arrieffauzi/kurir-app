@@ -1,0 +1,153 @@
+.page {
+  font-family: "Poppins";
+  font-style: normal;
+  padding: 0 16px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon-container {
+      display: flex;
+      flex-direction: row;
+
+      .number {
+        margin-left: 8px;
+        display: flex;
+        flex-direction: column;
+
+        .resi {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 18px;
+          color: #101828;
+        }
+
+        .date {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          color: #667085;
+        }
+      }
+    }
+
+    .Pending {
+        background: #fff9db;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        color: #f59f00;
+        padding: 0 12px;
+        border-radius: 16px;
+      }
+
+      .Success {
+        background: #ECFDF3;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        color: #039855;
+        padding: 0 12px;
+        border-radius: 16px;
+      }
+
+      .Inprogress {
+        background: #EFF8FF;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        color: #2E90FA;
+        padding: 0 12px;
+        border-radius: 16px;
+      }
+
+      .Trouble {
+        background: #FEE4E2;
+        font-size: 10px;
+        line-height: 20px;
+        color: #D92D20;
+        padding: 0 12px;
+        border-radius: 16px;
+      }
+  }
+
+  .order-container {
+    .request {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+
+      .title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #667085;
+      }
+
+      .name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+      }
+    }
+  }
+
+  .detail-order {
+    margin-top: 16px;
+
+    .title {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #667085;
+    }
+
+    .value {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #101828;
+    }
+  }
+
+  .address-container {
+    background: #fffaeb;
+    border-radius: 12px;
+    margin-top: 5px;
+    padding: 8px 10px;
+
+    .location {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      span {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #101828;
+      }
+
+      p {
+        margin: 4px 0 0 0;
+      }
+    }
+  }
+}
+
+.gap {
+  background: #f0f4fd;
+  height: 5px;
+  margin: 15px 0;
+}
+
+ion-button {
+  margin: 16px;
+  text-transform: none;
+  width: 328px;
+  height: 48px;
+  --border-radius: 16px;
+  --background:#E52138;
+}

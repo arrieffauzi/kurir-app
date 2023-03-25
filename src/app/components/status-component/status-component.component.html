@@ -1,0 +1,31 @@
+<ion-segment
+  (ionChange)="segmentChanged($event)"
+  value="list"
+  color="danger"
+  mode="md"
+  [(ngModel)]="segmentValue"
+>
+  <ion-segment-button value="pending">
+    <ion-label> Pending(50) </ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="success">
+    <ion-label> Success(0) </ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+<ion-list
+  class="animate__animated animate__slideInUp animate__fast"
+  *ngIf="segment === 'pending'"
+>
+  <ion-item *ngFor="let item of arr; let index = index" style="padding: 10px 0;">
+    <ion-label>*********123</ion-label>
+    <ion-icon slot="end" name="checkmark-outline"></ion-icon>
+  </ion-item>
+</ion-list>
+
+<div
+  class="animate__animated animate__slideInUp animate__fast flex-center"
+  *ngIf="segment === 'success'" style="margin-top: 100px;"
+>
+  <img src="../../../assets/images/empty-state.png" alt="" />
+</div>

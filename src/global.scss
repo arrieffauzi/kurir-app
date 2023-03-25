@@ -31,3 +31,20 @@
   justify-content: center;
   height: 100%;
 }
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}

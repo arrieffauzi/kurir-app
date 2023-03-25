@@ -1,0 +1,88 @@
+<ion-content>
+  <page-header title="Detail Pickup" [isScanner]="true"></page-header>
+  <div class="page">
+    <ion-row>
+      <ion-col class="header ion-no-padding">
+        <div>
+          <div class="icon-container">
+            <img src="../../assets/icon/progress-icon.svg" alt="" />
+            <div class="number">
+              <span class="resi">#1234566788</span>
+              <span class="date">10 Sep 2021</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div [ngClass]="status">
+            <span>{{status}}</span>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="gap"></div>
+
+  <div class="page">
+    <ion-row>
+      <ion-col class="ion-no-padding order-container">
+        <div class="flex-row-between">
+          <div class="flex-row-between">
+            <img src="../../assets/icon/avatar-icon.svg" alt="" />
+            <div class="request">
+              <span class="title">Request By</span>
+              <span class="name">Adven Rey </span>
+            </div>
+          </div>
+          <div>
+            <img src="../../assets/icon/whatsapp-icon.svg" alt="">
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-no-padding flex-row-between detail-order">
+        <div class="flex-column">
+          <span class="title">Total Paket</span>
+          <span class="value">50</span>
+        </div>
+        <div class="flex-column">
+          <span class="title">Berat</span>
+          <span class="value">32 Kg</span>
+        </div>
+        <div class="flex-column">
+          <span class="title">Estimasi</span>
+          <span class="value">10 Sep 2021, 20:20 WIB</span>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="ion-no-padding address-container">
+        <ion-row>
+          <ion-col class="ion-no-padding" size="1">
+            <img src="../../assets/icon/location.svg" alt="">
+          </ion-col>
+          <ion-col class="ion-no-padding location">
+            <span>Kost</span>
+            <p> Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta.... </p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <div class="gap"></div>
+
+  <div class="page">
+    <app-status-component></app-status-component>
+  </div>
+</ion-content>
+
+<ion-footer class="flex-center">
+  <ion-button>
+    Proses
+  </ion-button>
+</ion-footer>

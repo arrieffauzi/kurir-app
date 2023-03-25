@@ -7,6 +7,7 @@ import { HomeProgressComponent } from "./home-progress/home-progress.component";
 import { OrderDetailComponent } from "./order-detail/order-detail.component";
 import { OrderHomeComponent } from "./order-home/order-home.component";
 import { PageHeaderComponent } from "./page-header/page-header.component";
+import { StatusComponentComponent } from "./status-component/status-component.component";
 
 @NgModule({
     imports:[
@@ -19,14 +20,16 @@ import { PageHeaderComponent } from "./page-header/page-header.component";
         HomeProgressComponent,
         OrderHomeComponent,
         OrderDetailComponent,
-        PageHeaderComponent
+        PageHeaderComponent,
+        StatusComponentComponent
     ],
     exports:[
         HomeProfileComponent,
         HomeProgressComponent,
         OrderHomeComponent,
         OrderDetailComponent,
-        PageHeaderComponent
+        PageHeaderComponent,
+        StatusComponentComponent
     ]
 })
 export class ComponentsModule{}
